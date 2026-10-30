@@ -1,3 +1,5 @@
+<p align="center"><img src="../assets/brand/banner.svg" alt="AELYXORA Studio — Imagine. Design. Engineer." width="100%"></p>
+
 # AELYXORA
 
 ### Imagine. Design. Engineer.
