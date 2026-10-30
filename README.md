@@ -2,91 +2,44 @@
 
 ### Imagine. Design. Engineer.
 
-**The next generation of visual application development.**
+**Architecture-first. AI-driven. Built for systems and hardware.**
 
-AELYXORA is an open-source initiative building a professional, AI-native Rapid Application Development platform.
+AELYXORA is an open-source initiative developing **AELYXORA Studio**: an AI-native engineering environment where the primary workspace is an interactive **Project Architecture Map** with contextual AI chat.
 
-Our flagship project, **AELYXORA Studio**, reimagines the productivity of Delphi and WinDev for modern software engineering — combining visual application design, architecture-driven development, AI-assisted implementation, and full control over source code.
+Instead of starting from source files or forms, engineers design systems as connected components, interfaces, devices and contracts. **Humans own the architecture; AI primarily implements and tests components within its boundaries.**
 
-## Our Vision
+## What makes AELYXORA different?
 
-Software development should combine the speed of visual construction with the precision, transparency, and flexibility of professional engineering.
+- **Architecture Map at the center** — mind-map clarity with typed, UML-inspired relationships, dependencies and data flows.
+- **Context-aware AI engineering** — select a component or subgraph, inspect the exact shared context, request an implementation and review changes before applying them.
+- **Hardware-aware software development** — CPU/ISA, ABI, memory, buses, peripherals, drivers, interrupts, DMA and protocols are first-class architectural concerns where applicable.
+- **Assembly-first implementation** — native components and an in-house declarative UI runtime, with per-target architecture/OS adaptations and LLVM/Clang tooling.
+- **Human control and verifiable results** — explicit contracts, source ownership, local tests and evidence attached to the architecture.
 
-AELYXORA aims to make complex application development more accessible without sacrificing architecture, performance, maintainability, or developer control.
+## Intended workflow
 
-**Design visually. Build intelligently. Own your code.**
+1. **Design** a project as a typed architecture graph.
+2. **Define** component responsibilities, interfaces and target hardware constraints.
+3. **Ask AI** to implement a selected component without silently rewriting the architecture.
+4. **Review** proposed graph/source changes, approve them, build and test locally.
+5. **Inspect** results, source and diagnostics from the corresponding map nodes.
 
 ## AELYXORA Studio
 
-A unified development environment designed around six complementary capabilities:
+[Explore the project, architecture and roadmap](https://github.com/AELYXORA/Studio).
 
-- **Visual Application Designer** — Compose interfaces, layouts, forms, and reusable components.
-- **Architecture Designer** — Define modules, interfaces, dependencies, and architectural contracts.
-- **Data & Logic Designer** — Model structured data, business operations, events, and data bindings.
-- **AI Architect** — Design, generate, modify, and refine applications with AI assistance.
-- **Professional Code Editor** — Work directly with source code, build tools, debuggers, and tests.
-- **Cross-Platform Development** — Target desktop, mobile, server, and systems software through an extensible platform architecture.
+The Studio targets low-level and hardware-oriented software: native applications, libraries, drivers, firmware-facing tools, embedded interfaces and protocol implementations.
 
-## Architecture First
+Our direction is an **in-house declarative UI and Assembly-first core**, not Qt/QML, C++ or Delphi FMX. Cross-platform contracts are shared, but native Assembly implementations must be verified separately for each CPU/ABI.
 
-At the heart of AELYXORA is a unified, typed **Application Model**.
+**AI account integration is a goal, not an available feature.** We want an officially supported ChatGPT sign-in experience where eligible, without credential scraping or treating a Plus subscription as a general-purpose API key.
 
-This model describes application components, properties, events, actions, interfaces, data flows, and architectural constraints.
+## Status
 
-Visual tools, AI agents, and conventional programming workflows operate around this shared model.
+**Early experimental foundation.** The repository currently contains a minimal Linux x86-64 Assembly UI-tree validator and local test harness. There is no released IDE, interactive architecture canvas, renderer or connected AI chat yet.
 
-Our guiding principles:
-
-1. Architecture is an executable part of the development process, not just documentation.
-2. AI assists engineering decisions but never replaces deterministic validation.
-3. Generated source code must remain readable and maintainable.
-4. Visual development and manual programming must coexist.
-5. Applications should remain independent of the IDE wherever practical.
-6. Open standards, extensibility, and reproducible builds matter from the beginning.
-
-## Technology Direction
-
-The initial development platform is planned around:
-
-- **C++ and Qt 6.12 / QML** — IDE and visual tooling
-- **Typed Application Model** — component and architecture contracts
-- **CMake and native toolchains** — build infrastructure
-- **Language Server Protocol** — code intelligence
-- **AI integration** — architecture-aware generation and controlled code modifications
-- **Cross-platform runtimes** — starting with Qt-based applications
-
-The long-term vision includes extensible language backends, native application generation, and low-level systems development.
-
-## Roadmap
-
-**Phase 1 — Foundation**
-
-Application Model, component contracts, project format, architecture specifications.
-
-**Phase 2 — IDE Core**
-
-Project management, visual designer, property inspector, code editing, build integration.
-
-**Phase 3 — AI-Native Development**
-
-Architecture-aware AI workflows, change validation, generated implementations, and automated testing.
-
-**Phase 4 — Application Platform**
-
-Data modeling, reusable components, cross-platform deployment, SDK, and ecosystem expansion.
-
-## Project Status
-
-**Early architecture and foundation planning.**
-
-AELYXORA Studio is an evolving project. Features and technology decisions described here are targets, not claims of completed implementation.
-
-## Open Development
-
-AELYXORA is intended to develop in the open, with public technical documentation, architectural decisions, implementation progress, and clearly defined quality standards.
-
-The goal is to build a professional development platform that developers can understand, extend, and trust.
+Development is local-test-driven; GitHub Actions/CI remains disabled until release preparation.
 
 ---
 
-**AELYXORA Studio — Imagine. Design. Engineer.**
+**AELYXORA — Imagine. Design. Engineer.**
