@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/brand/banner.svg" alt="AELYXORA Studio — Imagine. Design. Engineer." width="100%"></p>
+<p align="center"><img src="../assets/brand/github-readme-banner-1600x500.png" alt="AELYXORA Studio — Imagine. Design. Engineer." width="100%"></p>
 
 # AELYXORA
 
